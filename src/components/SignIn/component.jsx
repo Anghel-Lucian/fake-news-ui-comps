@@ -1,8 +1,12 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+
+import { userLogIn } from "../../appSlice";
 
 const SignIn = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const dispatch = useDispatch();
 
   const onChangeUsername = (e) => {
     // validation...
@@ -20,6 +24,7 @@ const SignIn = () => {
     e.preventDefault();
 
     // do something with username and password
+    dispatch(userLogIn(/* values of username and pass */));
   };
 
   return (
