@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-import { SignIn, Button } from "./components";
+import { UserRegister, Button } from "./components";
 
 const App = () => {
   return (
     <div className="App">
-      <SignIn />
+      <UserRegister />
       <Button />
     </div>
   );

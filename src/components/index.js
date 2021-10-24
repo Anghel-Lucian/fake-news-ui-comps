@@ -1,4 +1,4 @@
-import SignIn from "./SignIn";
+import UserRegister from "./UserRegister";
 import Button from "./Button";
 
-export { SignIn, Button };
+export { UserRegister, Button };
