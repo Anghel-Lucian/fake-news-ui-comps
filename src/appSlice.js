@@ -1,8 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  userLoggedIn: false,
-  userSearchHistory: [],
+  user: {
+    userLoggedIn: false,
+    userSearchHistory: [],
+  },
   tweetSent: "",
   tweetVerdict: {},
 };
@@ -24,3 +26,5 @@ const appSlice = createSlice({
 export const { userLogIn, sendTweet } = appSlice.actions;
 
 export default appSlice.reducer;
+
+export const { selectTweetVerdict } = (state) => state.app.tweetVerdict;

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-import { UserRegister, Button } from "./components";
+import { UserLogin, Button, TruthScore } from "./components";
 
 const App = () => {
   return (
@@ -10,7 +10,7 @@ const App = () => {
         {/* <NavBar /> */}
         <div className="main-view">
           <Switch>
-            <Route path="/register" exact component={UserRegister} />
+            <Route path="/register" exact component={UserLogin} />
             {/* <Route path="/history" exact component={SearchHistory} />
             <Route path="/truth-score" exact component={TruthScore} /> */}
           </Switch>

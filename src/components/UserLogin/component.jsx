@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 
 import { userLogIn } from "../../appSlice";
 
-const UserRegister = () => {
+const UserLogin = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const dispatch = useDispatch();
@@ -43,4 +43,4 @@ const UserRegister = () => {
   );
 };
 
-export default UserRegister;
+export default UserLogin;

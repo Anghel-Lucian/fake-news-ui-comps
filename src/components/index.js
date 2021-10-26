@@ -1,4 +1,5 @@
-import UserRegister from "./UserRegister";
+import UserLogin from "./UserLogin";
 import Button from "./Button";
+import TruthScore from "./TruthScore";
 
-export { UserRegister, Button };
+export { UserLogin, Button, TruthScore };
