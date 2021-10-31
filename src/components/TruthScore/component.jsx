@@ -4,12 +4,11 @@ import { useSelector } from "react-redux";
 import { selectTweetVerdict } from "../../appSlice";
 
 const TruthScore = () => {
-  const { score, reason } = useSelector(selectTweetVerdict);
+  const { score } = useSelector(selectTweetVerdict);
 
   return (
     <div className="truth-score">
       <div className="truth-score__points">{score}</div>
-      <div className="truth-score__reason">{reason}</div>
     </div>
   );
 };

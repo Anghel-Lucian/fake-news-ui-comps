@@ -13,7 +13,7 @@ const appSlice = createSlice({
   name: "app",
   initialState,
   reducers: {
-    userLogIn(state, action) {
+    userLogin(state, action) {
       // send req to backend, log user in, update state, components update themselves accordingly
     },
     sendTweet(state, action) {
@@ -23,7 +23,7 @@ const appSlice = createSlice({
   },
 });
 
-export const { userLogIn, sendTweet } = appSlice.actions;
+export const { userLogin, sendTweet } = appSlice.actions;
 
 export default appSlice.reducer;
 

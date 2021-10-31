@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 
-import { userLogIn } from "../../appSlice";
+import { userLogin } from "../../appSlice";
 
 const UserLogin = () => {
   const [username, setUsername] = useState("");
@@ -24,7 +24,7 @@ const UserLogin = () => {
     e.preventDefault();
 
     // do something with username and password
-    dispatch(userLogIn(/* values of username and pass */));
+    dispatch(userLogin(/* values of username and pass */));
   };
 
   return (
